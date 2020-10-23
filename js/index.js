@@ -96,7 +96,6 @@ const addPiens = (scene) => {
     const material = new THREE.MeshStandardMaterial({
       map: texture,
     });
-    // const sprite = new THREE.Sprite(material);
     const mesh = new THREE.Mesh(geometry, material);
     mesh.position.set( Math.random()*width-height, Math.random()*width-height, Math.random()*width-height );
     scene.add( mesh );
